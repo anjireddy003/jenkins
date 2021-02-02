@@ -21,10 +21,10 @@
 #     get_url: url=https://s3.amazonaws.com/hariii/target/petclinic.war dest=/home/ubuntu/
    - name: start apache-tomcat-8.5.61
      command: /home/ubuntu/tomcat/apache-tomcat-8.5.61/bin/startup.sh
-   - name: copy petclinic.war
+   - name: copy abn.war
     # shell: cp target/petclinic.war /home/ubuntu/tomcat/apache-tomcat-8.5.61/webapps/
      copy:
-        src: target/petclinic.war
+        src: target/abn.war
         dest: /home/ubuntu/tomcat/apache-tomcat-8.5.61ebapps       
    - name: stop apache-tomcat-8.5.61
      command: nohup "/home/ubuntu/tomcat/apache-tomcat-8.5.61/bin/shutdown.sh"
