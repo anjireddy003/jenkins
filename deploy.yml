@@ -24,8 +24,8 @@
    - name: copy abn.war
     # shell: cp target/petclinic.war /home/ubuntu/tomcat/apache-tomcat-8.5.61/webapps/
      copy:
-        src: target/abn.war
-        dest: /home/ubuntu/tomcat/apache-tomcat-8.5.61ebapps       
+        src: /target/abn.war
+        dest: /home/ubuntu/tomcat/apache-tomcat-8.5.61/webapps       
    - name: stop apache-tomcat-8.5.61
      command: nohup "/home/ubuntu/tomcat/apache-tomcat-8.5.61/bin/shutdown.sh"
    - name: start apache-tomcat-8.5.61
